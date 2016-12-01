@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="horizontal"
+    tools:context="com.wolfprogrammer.weather.views.fragments.CurrentFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contextClickable="false">
+        <TextView
+            android:id="@+id/dateTextView"
+            android:text="Today, November 25"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/currentTempTextView"
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:textSize="60dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/dateTextView" />
+
+        <TextView
+            android:id="@+id/minTempTextView"
+            android:text="13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/currentTempTextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:src="@drawable/art_clear" />
+
+        <TextView
+            android:text="Clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/conditionTextView"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

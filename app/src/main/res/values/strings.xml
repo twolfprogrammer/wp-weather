@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">WP Weather</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="humidity_prefix">Humidity:</string>
+    <string name="pressure_prefix">Pressure:</string>
+    <string name="hectopascal_unit">hPa</string>
+    <string name="wind_prefix">Wind:</string>
+    <string name="miles_per_hour_unit">MPH</string>
+    <string name="degrees_symbol" translatable="false">&#176;</string>
+</resources>
